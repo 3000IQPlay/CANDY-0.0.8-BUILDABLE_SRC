@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "compatibilityLevel": "JAVA_8",
+  "package": "fc.client.candy.mixin.mixins",
+  "refmap": "mixins.candy.refmap.json",
+  "mixins": [
+    "MixinBlockLiquid",
+    "MixinEntityPlayer",
+    "MixinEntityPlayerSP",
+    "MixinEntityRenderer",
+    "MixinGuiNewChat",
+    "MixinGuiPlayerTabOverlay",
+    "MixinGuiScreen",
+    "MixinItemRenderer",
+    "MixinMinecraft",
+    "MixinModelPlayer",
+    "MixinNetworkManager",
+    "MixinPlayerControllerMP",
+    "MixinRenderEnderCrystal",
+    "MixinRenderLivingBase",
+    "MixinWorld"
+  ]
+}
