@@ -34,7 +34,7 @@ minecraft {
     version = project.forgeVersion
     runDir = 'run'
     mappings = project.mcpVersion
-    coreMod = 'me.alpha432.oyvey.mixin.OyVeyMixinLoader'
+    coreMod = 'fc.client.candy.mixin.OyVeyLoader'
     makeObfSourceJar = false
 }
 
@@ -94,7 +94,7 @@ shadowJar {
 
 mixin {
     defaultObfuscationEnv searge
-    add sourceSets.main, 'mixins.oyvey.refmap.json'
+    add sourceSets.main, 'mixins.candy.refmap.json'
 
 }
 
@@ -108,13 +108,13 @@ reobf {
 jar {
     manifest {
         attributes(
-                'MixinConfigs': 'mixins.oyvey.json',
+                'MixinConfigs': 'mixins.candy.json',
                 'tweakClass': 'org.spongepowered.asm.launch.MixinTweaker',
                 'TweakOrder': 0,
                 'FMLCorePluginContainsFMLMod': 'true',
-                'FMLCorePlugin': 'me.alpha432.oyvey.mixin.OyVeyMixinLoader',
+                'FMLCorePlugin': 'fc.client.candy.mixin.OyVeyLoader',
                 'ForceLoadAsMod': 'true',
-                'FMLAT': 'oyvey_at.cfg'
+                'FMLAT': 'candy_at.cfg'
         )
     }
 }
